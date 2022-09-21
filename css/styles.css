@@ -345,6 +345,7 @@ body{
   color: #555555;
   background: #FFFFFF;
   border: 1px solid #A4CBE6;
+  padding: 15px 0;
 }
 .content__buttons:nth-child(2){
   margin: 0 0 10px 0;
@@ -459,10 +460,24 @@ body{
 .works__subtitle span{
   font-weight: 700;
 }
+.works__image {
+  position: relative;
+  left:  0;
+  bottom: 0;
+}
+.works__item:nth-child(2) > .works__image img{
+  margin: 0 -20px 0 0;
+}
+.works__item:nth-child(2) > .works__image {
+  position: relative;
+  left: -20px;
+}
+  
+
 @media (max-width: 1198.98px) {
   .works__subtitle {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 @media (max-width: 767.98px) {
@@ -479,6 +494,10 @@ body{
 @media (max-width: 991.98px) {
   .works__title{
     margin: 30px 0 0 0;
+  }
+  .works__item:nth-child(2) > .works__image {
+    position: relative;
+    left: -10px;
   }
 }
 @media (max-width: 575.98px) {
@@ -521,8 +540,9 @@ body{
 .bathroom__button{
   margin: 30px 0 0 0;
 }
-.bathroom__button button{
+.bathroom__button a{
   position: relative;
+  padding: 17px 0 0 115px;
 }
 .button__image::after{
   position: absolute ;
@@ -541,9 +561,15 @@ body{
   .bathroom__body{
     padding: 60px 0 125px 0;
   }
+  .bathroom__button a{
+    position: relative;
+    padding: 17px 0 0 50px;
+  }
+  .btn__outline{
+    max-width: 210px;
+  }
   .bathroom__button{
     margin: 20px 0 0 0;
-    max-width: 210px;
   }
   .bathroom__button button{
     width: 100%;
