@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+  <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.jpg"/>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>bath-categories</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header__navbar">
+      <nav class="navbar navbar-expand-lg p-0" name="top">
+        
+        <div class="container">
+
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" height="100%" width="100%" title="logo image" alt="logo">
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-end header__menu " id="navbarContent">
+            <ul class="navbar-nav menu__navbar " id="menu-list">
+              <li class="navbar__item"> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5" data-bs-toggle="offcanvas" data-bs-target="#sidebarBathroomContent" aria-controls="sidebarBathroomContent">bathroom remodel</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">window replacement</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">about us</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">meet the experts</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">faqs</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">contact us</a>
+              </li>
+            </ul>
+            <a  
+              class="me-5 me-lg-0 header__search__btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample"
+              href="#collapseWidthExample"
+              id="searchingButton"
+            >
+              <img src="./assets/header/search-btn.svg" width="20" height="20" title="search image" alt="search-image">
+            </a>
+          </div>
+          
+          
+        
+          <div class="col-10 d-flex justify-content-end input__collapse__body">
+            <div class="collapse flex-column  collapse-horizontal" id="collapseWidthExample">
+              <div class="input-group mb-3 collapse__body">
+                <button>
+                  <img src="./assets/header/search-icon.svg" width="21" height="21" class="collapse__icon" title="search image" alt="search-image">
+                </button>
+                <input type="text" class="collapse__input" type="text" placeholder="Search" aria-describedby="button-addon2">
+                <button>
+                  <img 
+                    title="close image"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample"
+                    aria-expanded="false"
+                    aria-controls="collapseWidthExample"
+                    href="#collapseWidthExample"
+                    src="./assets/header/close-icon.svg" 
+                    class="collapse__button" 
+                    type="button" 
+                    id="button-addon2" 
+                    alt="close-image"
+                    width="25"
+                    height="22"
+                  >
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-toggler m-0 p-0 navbar-button header__burger" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false">
+            <div class="d-flex align-items-center burger__body">
+              <a  
+                class="ms-auto me-5 me-lg-0 header__search__btn"
+                id="searchingButtonMobile"
+                aria-expanded="false"
+                data-bs-toggle="collapse"
+                data-bs-target="#inputCollapseMobile"
+                aria-controls="inputCollapseMobile"
+                href="#inputCollapseMobile"
+                src="./assets/header/close-icon.svg" 
+                type="button" 
+              >
+                <img src="./assets/header/search-btn.svg" width="20" height="20" title="search image" alt="search-image">
+              </a>
+              <p class="m-0 me-2 align-items-center burger__title">menu</p>
+              <button type="button" id="burgerButton" data-bs-toggle="offcanvas" data-bs-target="#burgerMenu" aria-controls="burgerMenu">
+                <img class="burger__icon" width="21" height="20" title="burger image" src="./assets/header/burger.svg" alt="burger-image">
+              </button>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start burger__menu" tabindex="-1" id="burgerMenu" aria-labelledby="burgerMenu">
+            <div class=" offcanvas-header px-2 py-0 burger__menu__head">
+              <div class="container d-flex justify-content-between">
+                <a href="" class="header__logo">
+                  <img src="./assets/logo.svg" width="100%" height="100%" title="logo image" alt="logo-image">
+                </a>
+                <div class="d-flex align-items-center burger__menu__body">
+                  <p class="m-0 me-2 align-items-center burger__menu__title">close</p>
+                  <a type="button" id="closeBurgerButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="./assets/header/close.svg" width="25" height="25" title="close image" alt="close-image">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="container burger__menu__body">
+                <div class="row my-4">
+                  <div class="col d-flex justify-content-center">
+                    <button type="button" class="mx-auto menu__body__btn">Start a Quote</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center">
+                    <div class="menu__body__item ">
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">home</a>
+                      </div>
+                      <div class="menu__body__item">
+                        <div class="dropdown show bathroom__content">
+                          <a class="dropleft menu__body__link dropdown-toggle" href="#" role="button" id="remodelContent" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            bathroom remodel
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="remodelContent">
+                            <a class="dropdown-item " href="#">Master Bathroom</a>
+                            <a class="dropdown-item " href="#">Roll In Shower</a>
+                            <a class="dropdown-item " href="#">Shower to Tub</a>
+                            <a class="dropdown-item " href="#">Small Bathroom</a>
+                            <a class="dropdown-item " href="#">Tub to Shower</a>
+                            <a class="dropdown-item " href="#">Walk In Bath</a>
+                            <a class="dropdown-item " href="#">Walk In Shower</a>
+                            <a class="dropdown-item " href="#">Walk In Tubs</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menu__body__item">
+                        <div class="dropdown show replacement__content">
+                          <a class="menu__body__link dropdown-toggle" href="#" role="button" id="replacementContent" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            window replacement
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="replacementContent">
+                            <a class="dropdown-item " href="#">Awning Windows</a>
+                            <a class="dropdown-item " href="#">Bay Windows</a>
+                            <a class="dropdown-item " href="#">Bow Windows</a>
+                            <a class="dropdown-item " href="#">Casement Windows</a>
+                            <a class="dropdown-item " href="#">Double Hung Windows</a>
+                            <a class="dropdown-item " href="#">House Windows</a>
+                            <a class="dropdown-item " href="#">Picture Windows</a>
+                            <a class="dropdown-item " href="#">Sliding Windows</a>
+                            <a class="dropdown-item " href="#">Speciality Windows</a>
+                            <a class="dropdown-item " href="#">Windows & Doors</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">about us</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">meet the experts</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">faqs</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">contact us</a>
+                      </div>
+                    
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    
+  <main class="main">
+    <!-- bathroom -->
+    <section class="bathroom">
+      <div class="container-fluid p-0">
+        <div class="container">
+          <div class="bathroom__body">
+            <h1 class=" m-0 bathroom__title title">Bathroom Remodel </h1>
+            <div class="bathroom__button">
+              <button class=" btn-lg p-0 btn__outline button__image" type="submit">Find local pros</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- select -->
+    <section class="select">
+      <div class="container text-center select__body">
+        <div class="row">
+          <h2 class="select__title p-0">Select a bathroom project</h2>
+          <div class="navbar-expand-lg">
+            <div id="recipeCarousel" class="carousel slide collapse navbar-collapse" id="toggleSliderOne" data-bs-ride="carousel">
+              <div class="carousel-inner" id="toggleSlider" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col select__card">
+                    <div class="card__img">
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="85" width="100" title="bathtub image" alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="85" width="100" title="bathtub image" alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="85" width="100" title="bathtub image" alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="85" width="100" title="bathtub image" alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="85" width="100" title="bathtub image" alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="85" width="100" title="bathtub image" alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="85" width="100" title="bathtub image" alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                <img src="./assets/main/arrow-bath.svg" width="10" height="15" title="arrow next image"  alt="arrow-next-image">
+              </a>
+              <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                <img src="./assets/main/arrow-bath.svg" width="10" height="15" title="arrow next image"  alt="arrow-next-image">
+              </a>
+            </div>
+
+            <!-- second select -->
+            <div id="recipeCarouselTwo" class="carousel slide navbar-toggler" data-toggle="collapse" data-target="#toggleSliderOne" data-bs-ride="carousel" aria-controls="navbarContent" aria-expanded="false">
+              <div class="carousel-inner" id="toggleSliderTwo" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="60" width="70" title="bathtub image"  alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div class="">
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg"  height="60" width="70" title="bathtub image"  alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div class="">
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg"  height="60" width="70" title="bathtub image"  alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg"  height="60" width="70px" title="bathtub image"  alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="60" width="70" title="bathtub image"  alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="60" width="70" title="bathtub image"  alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div>
+                      <img src="./assets/bath-sidebar/bathtub-icon.svg" height="60" width="70" title="bathtub image"  alt="bathtub-image">
+                    </div>
+                    <div class="card__title">lorem ipsum</div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarouselTwo" role="button" data-bs-slide="next">
+                <img src="./assets/main/arrow-bath.svg" width="7" height="10" title="arrow next image"  alt="arrow-next-image">
+              </a>
+              <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarouselTwo" role="button" data-bs-slide="prev">
+                <img src="./assets/main/arrow-bath.svg" width="7" height="10" title="arrow next image"  alt="arrow-next-image">
+              </a>
+            </div>
+            
+          </div>
+        </div>		
+      </div>
+    </section>
+
+    <!-- gallary -->
+    <section class="gallary">
+      <div class="container gallery-container">
+        <div class="tz-gallery gallary__header  navbar-expand-md">
+          <div class="row px-3 px-lg-0">
+            <div class="col-auto collapse navbar-collapse" id="gallaryTextBlock">
+              <nav class="gallary__breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a class="breadcrumb__link" href="#">home</a></li>
+                  <li class="breadcrumb-item"><a class="breadcrumb__link" href="#">Bathroom Remodel</a></li>
+                </ol>
+              </nav>
+            </div>
+            
+            <div class="col-auto navbar-toggler" data-toggle="collapse" data-target="#gallaryTextBlock"
+            aria-controls="gallaryTextBlock" aria-expanded="false">
+              <nav class="gallary__breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a class="breadcrumb__link" href="#">home</a></li>
+                  <li class="breadcrumb-item"><a class="breadcrumb__link" href="#">Bathroom Remodel</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Master Remodel</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-md-12">
+              <h2 class="text-center gallary__title p-0">Transform your bathroom space into a tranquil retreat!</h2>
+            </div>
+            <div class="col">
+              <p class="gallary__subtitle p-0">
+                Whether you’re looking to simply replace the bathroom floor tiles or renovate the entire space and turn it into that meditative spa, a bathroom remodel can make a significant difference in the overall aesthetics of your house. 
+              </p>
+            </div>
+          </div>
+          <div class="row gallary__body">
+            <div class="col-sm-12 col-md-4 gallary__item">
+              <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                <img width="100%" height="100%" src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg" title="bridge image"  alt="bridge-image">
+              </a>
+            </div>
+            <div class="col-6 col-md-4 gallary__item">
+              <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg">
+                <img width="100%" height="100%" src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg" title="park image" alt="park-image">
+              </a>
+            </div>
+            <div class="col-6 col-md-4 gallary__item">
+              <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg">
+                <img width="100%" height="100%" src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg" title="tunnel image" alt="tunnel-image">
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-8 gallary__item">
+              <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
+                <img width="100%" height="100%" src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg" title="traffic image" alt="traffic-image">
+              </a>
+            </div>
+            <div class="col-4 p-0 gallary__item">
+              <div class="col-sm-6 col-md-12 ">
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg">
+                  <img width="100%" height="100%" src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg" title="coast image" alt="сoast-image">
+                </a>
+              </div> 
+              <div class="col-sm-6  col-md-12 ">
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg">
+                  <img width="100%" height="100%" src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg" title="rails image" alt="rails-image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- blue list -->
+    <section class="blue__list">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="blue__list__title pb-3">
+              While selecting fixtures and finishes is the playful and fun aspect of designing a bathroom, it's critical to make broad decisions about how to improve function and optimize the layout before deciding on the finer elements. 
+            </p>
+            <p class="blue__list__title p-0 pb-4">
+              If you’re looking to spruce up your bathroom, Remodel Your Home brings you an efficient and professional solution that will convert your bathroom into a relaxing oasis
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-12 d-flex justify-content-center justify-content-xxl-start blue__list__lists">
+            <ul class="list-group list-group-flush p-0">
+              <li class="list-group-item d-flex p-0 mb-3">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img " title="checkbox image" alt="checkbox-image">
+                </div>
+                Complete makeover of bathrooms</li>
+              <li class="list-group-item d-flex p-0 mb-3">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Tile replacement </li>
+              <li class="list-group-item d-flex p-0 mb-3">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Insulation and heating  </li>
+              <li class="list-group-item d-flex p-0 mb-3">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                A fourth item</li>
+              <li class="list-group-item d-flex p-0 mb-3">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Faucet fixtures, lighting, painting, and flooring</li>
+            </ul>
+          </div>
+          <div class="col-xl-6 col-lg-12 d-flex justify-content-center justify-content-xxl-start blue__list__lists">
+            <ul class="list-group list-group-flush p-0">
+              <li class="list-group-item d-flex p-0 mb-3">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Toilets, bathtub, shower, and sink installation </li>
+              <li class="list-group-item d-flex p-0 mb-3">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Plumbing</li>
+              <li class="list-group-item d-flex p-0 mb-2">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Bathroom cabinets and vanity installation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- left posts -->
+    <section class="features">
+      <div class="container navbar-expand-md">
+        <div class="row">
+          <div class="col col-lg-6 features__img p-0">
+            <div class="features__background"></div>
+          </div>
+          <div class="col features__body">
+            <h2 class="features__title p-0 posts__title">Features and Benefits of a Bathroom Remodel</h2>
+            <div class="navbar-toggler mb-4 p-0 features__toggle"  data-toggle="collapse" aria-expanded="false">
+              <p class="m-0">
+                Whether you’re looking to simply replace the bathroom floor tiles or renovate the entire space and turn it into that meditative spa, a bathroom remodel can make a significant difference in the overall aesthetics of your house. While selecting fixtures and finishes is the playful and fun aspect of designing a bathroom, it's critical to make broad decisions about how to improve function and optimize the layout before deciding on the finer elements. If you’re looking to spruce up your bathroom, Remodel Your Home brings you an efficient and professional solution that will convert your bathroom into a relaxing oasis, making the most of every square inch of space including, but not limited to:
+              </p>
+            </div>
+            <ul class="list-group d-flex  list-group-flush p-0">
+              <li class="list-group-item d-flex p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Improved safety</li>
+              <li class="list-group-item d-flex p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Aesthetically pleasing layout that complements your home decor </li>
+              <li class="list-group-item d-flex p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Highly functional, ergonomically-designed bath solutions </li>
+              <li class="list-group-item d-flex p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Energy efficient installations</li>
+            </ul>
+              <div class="features__btn">
+                <button class=" btn__primary">See Local Pros</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- right posts -->
+    <section class="choose">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6 choose__body">
+            <h2 class="features__title p-0 posts__title">Why Choose Remodel Your Home</h2>
+            <ul class="list-group list-group-flush p-0">
+              <li class="list-group-item d-flex align-items-center p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Connecting homeowners with expert bathroom remodel contractors </li>
+              <li class="list-group-item d-flex align-items-center p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Providing end-to-end bathroom remodel solutions </li>
+              <li class="list-group-item d-flex align-items-center p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Providing end-to-end bathroom remodel solutions  </li>
+              <li class="list-group-item d-flex align-items-center p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                XYZ years of combined experience </li>
+            </ul>
+          </div>
+          <div class="col-6 p-0 col-lg-auto choose__img p-0">
+            <div class="choose__background"></div>
+          </div>
+        </div>
+      </div>
+    </section> 
+ 
+    <!-- center posts -->
+    <section class="factors">
+      <div class="container p-0">
+        <div class="row factors__body">
+          <div class="col-12 mb-md-5 p-0">
+            <h2 class="posts__title">Factors that Influence Bathroom Remodel Costs</h2>
+            <p class="text-start text-md-center posts__subtitle">
+              From the kind of fittings you select for installations to the labor costs involved, here are X factors that determine bathroom remodel costs. 
+            </p>
+          </div>
+          <div class="col features__img p-0">
+            <div class="features__background"></div>
+          </div>
+          <div class="col factors__list">
+            <ul class="list-group list-group-flush p-0">
+              <li class="list-group-item d-flex p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                The size of the bathroom </li>
+              <li class="list-group-item d-flex align-items-center p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Geo-specific location and the cost of labor in the area  </li>
+              <li class="list-group-item d-flex p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                Quantity, quality, and costs of the materials  </li>
+              <li class="list-group-item d-flex p-0 mb-xxl-4 mb-3 posts__item">
+                <div class="d-flex align-items-center">
+                  <img width="40" height="30" src="./assets/main/checkbox.svg" class="pe-3 checkbox__img" title="checkbox image" alt="checkbox-image">
+                </div>
+                The scale of the project  </li>
+            </ul>
+              <div class="features__btn">
+                <button class=" btn__primary">Get a Free Quote</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- master -->
+    <section class="master">
+      <div class="container">
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+        <div class="row  master__body">
+          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-xl-start align-items-center master__img">
+            <img src="./assets/bath-sidebar/bathtub-icon.svg" width="300" height="255" title="bathtub image" alt="bathtub-image">
+          </div>
+          <div class="col-12 col-lg-8 p-0 ps-lg-5 ps-xl-0 d-flex  flex-column justify-content-center  align-items-center  align-items-lg-start">
+            <p class="master__title mb-md-4 p-0 ">Master Bathrooms</p>
+            <p class="master__subtitle p-0">Your master bathroom, the most prominent bathroom at home and a sanctuary, has ample space and opportunities for a makeover. From non-slip tiles for safety, smart showers with multiple settings and temperature-controlled shower stalls to fancy vanity designs, walk-in bathtubs and much more, we bring top-of-the-line brands for you to choose from. </p>
+            <p class="master__subtitle m-0 p-0">While the cost for master bathroom remodel may change based on the surface area to be renovated, there is no limit to the aesthetic upgrades you can make. We have something to suit every budget and need.</p>
+            <div class="col-12 col-lg-auto master__btn p-0 mt-3 d-flex flex-column justify-content-center align-items-center">
+              <button class=" btn__primary">View Master Bathrooms</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- estimate -->
+    <section class="estimate">
+      <div class="container">
+        <div class="row estimate__body">
+          <div class="col p-0 d-flex flex-column justify-content-center align-items-center">
+            <h3 class=" estimate__title">Ready to remodel your bathroom?</h3>
+            <div class="estimate__btn">
+              <button class="btn__outline button__image">Get an Estimate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- faqs -->
+    <section class="faqs">
+      <div class="container">
+        <div class="row faqs__body">
+          <div class="col p-0">
+            <h3 class="faqs__title">FAQS</h3>
+          </div>
+          <div class="accordion p-0" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="faqs__subtitle p-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p class="faqs__subtitle p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="faqs__subtitle p-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p class="faqs__subtitle p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="faqs__subtitle p-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p class="faqs__subtitle p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="faqs__subtitle p-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p class="faqs__subtitle p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- areas -->
+    <section class="areas navbar-expand-md">
+      <div class="container">
+        <div class="row areas__body">
+          <div class="col-12 p-0">
+            <h3 class="areas__title">Areas we serve</h3>
+          </div>
+          <div class="align-items-start collapse navbar-collapse" id="areasList">
+            <div class="col-6 col-md-3 d-flex justify-content-center text-center p-0">
+              <ul class="areas__list">
+                <li class="areas__item"><a href="" class="areas__link">New Jersey</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Jacksonville</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Miami</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Tampa</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Long Island</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Atlanta</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3 d-flex justify-content-center text-center p-0">
+              <ul class="areas__list">
+                <li class="areas__item"><a href="" class="areas__link">Phoenix</a></li>
+                <li class="areas__item"><a href="" class="areas__link">North Texas</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Greater Philadelphia PA</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Chicago</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Charlotte</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Central Texas</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3 d-flex justify-content-center text-center p-0">
+              <ul class="areas__list">
+                <li class="areas__item"><a href="" class="areas__link">Seattle</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Boston</a></li>
+                <li class="areas__item"><a href="" class="areas__link">New England</a></li>
+                <li class="areas__item"><a href="" class="areas__link">San Francisco</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Houston</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Greater Michigan </a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3 d-flex justify-content-center text-center p-0">
+              <ul class="areas__list">
+                <li class="areas__item"><a href="" class="areas__link">Los Angeles</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Detroit</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Colorado</a></li>
+                <li class="areas__item"><a href="" class="areas__link">Orlando</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navbar-toggler" data-toggle="collapse" data-target="#areasList"
+          aria-controls="areasList" aria-expanded="false">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-center p-0">
+                <ul class="areas__list">
+                  <li class="areas__item"><a href="" class="areas__link">New Jersey</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Jacksonville</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Miami</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Tampa</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Long Island</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Atlanta</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Phoenix</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">North Texas</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Greater Philadelphia PA</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Chicago</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Charlotte</a></li>
+                </ul>
+              </div>
+              <div class="col-6 d-flex justify-content-center p-0">
+                <ul class="areas__list">
+                  <li class="areas__item"><a href="" class="areas__link">Central Texas</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Seattle</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Boston</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">New England</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">San Francisco</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Houston</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Greater Michigan </a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Los Angeles</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Detroit</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Colorado</a></li>
+                  <li class="areas__item"><a href="" class="areas__link">Orlando</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partners -->
+    <section class="partners">
+      <div class="container">
+        <div class="mx-auto partners__content">
+          <img src="./assets/main/partners.svg" width="100%" height="110" title="partners image" alt="partners-image">
+        </div>
+      </div>
+    </section>
+
+    <!-- bathroom sidebar -->
+    <div class="sidebar__bathroom offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebarBathroomContent" aria-labelledby="sidebarBathroomTitle">
+      <div class="offcanvas-header justify-content-end">
+        <div class="d-flex align-items-center">
+          <p class="m-0 me-2 align-items-center sidebar__bathroom__text">close</p>
+          <a type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="./assets/header/close.svg" width="25" height="25" title="close image" alt="close-image">
+          </a>
+        </div>
+      </div>
+      <div class="offcanvas-body p-0 sidebar__bathroom__body">
+        <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+          <p class="m-0">Master Bathroom</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+          <p class="m-0">Roll In Shower</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+          <p class="m-0">Shower</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+          <p class="m-0">Shower to Tub</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+          <p class="m-0">Small Bathroom</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+          <p class="m-0">Tub to Shower</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+          <p class="m-0">Walk In Bath</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+          <p class="m-0">Walk In Shower</p>
+        </div>
+        <div class="d-flex align-items-center mb-3 sidebar__bathroom__item">
+          <p class="m-0">Walk In Tubs</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- collapse mobile input -->
+    <div class="collapse collapse-horizontal input__collapse__mobile" id="inputCollapseMobile">
+      <div class="input-group">
+        <div class="collapse__mobile__body">
+          <button>
+            <img src="./assets/header/search-icon.svg" width="21" height="21" class="collapse__mobile__icon" title="search image" alt="search-image">
+          </button>
+          <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="collapse-mobile-button">
+          <button>
+            <img 
+              title="close image"
+              data-bs-toggle="collapse"
+              data-bs-target="#inputCollapseMobile"
+              aria-expanded="false"
+              aria-controls="inputCollapseMobile"
+              href="#inputCollapseMobile"
+              src="./assets/header/close-icon.svg" 
+              class="collapse__mobile__button" 
+              type="button" 
+              alt="close-image"
+              width="25"
+              height="22"
+              id="collapse-mobile-button"
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- scrolling input -->
+    <div class="collapse input__scrolling" id="inputScroll">
+      <div class="input-group mb-3 scrolling__body">
+          <input type="text" class="form-control scrolling__input" placeholder="Enter your zip to find local pros." aria-label="Username" aria-describedby="button-scroll-go">
+          <button class="scrolling__button" type="button" id="button-scroll-go">GO</button>
+        </div>
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer navbar-expand-lg">
+    <div class="footer__body collapse navbar-collapse" id="footerContent">
+      <div class="container mt-4 align-items-start">
+        <div class="row">
+          <div class="col">
+            <p class="footer__head m-0 mb-3">Bathroom remodel</p>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="" class="footer__link">Master Bathroom</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Roll In Shower</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Shower</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Shower to Tub</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Small Bathroom</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Tub to Shower</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Walk In Bath</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Walk In Shower</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Walk In Tubs</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <p class="footer__head m-0 mb-3">Windows Replacement</p>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="" class="footer__link">Awning Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Bay Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Bow Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Casement Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Double Hung Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">House Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Picture Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Sliding Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Speciality Windows</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Windows & Doors</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <p class="footer__head m-0 mb-3">Learn More</p>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="" class="footer__link">About Us</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Cost Calculators</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Resources</a></li>
+              <li class="footer__item"><a href="" class="footer__link">FAQS</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col footer__follow">
+            <div class="row">
+              <div class="footer__head m-0 p-0 mb-3 d-flex align-text-center justify-content-center">Follow Us</div>
+              <div class="col pe-2  pe-lg-3 d-flex justify-content-center follow__body">
+                <a href="" class="follow__link"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <div class="col pe-2 pe-lg-3 d-flex justify-content-center follow__body">
+                <a href="" class="follow__link"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="col pe-2 pe-lg-3 d-flex justify-content-center follow__body">
+                <a href="" class="follow__link"><i class="fa-brands fa-square-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-100"></div>
+
+          <div class="row align-items-center footer__info">
+            <div class="p-0 footer__logo">
+              <a href="">
+                <img src="./assets/logo.svg" width="100%" height="100%" title="logo image" alt="logo-image">
+              </a>
+            </div>
+            <div class="col ps-2 ps-md-5 d-flex justify-content-between align-items-center info__body">
+              <div class="info__img">
+                <img src="./assets/footer/info.svg" width="100%" height="100%" title="informations image" alt="informations-image">
+              </div>
+              <div class="d-flex flex-column justify-content-center align-items-center info__btn">
+                <a href="#top" class="info__button__arrow">
+                  <img src="./assets/footer/arrow-up.svg" width="100%" height="100%" title="arrow up image" alt="arrow-up-image">
+                </a>  
+                <p class="p-0 text-align-center mt-1 btn__text">top</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="navbar-toggler footer__mobile p-0" type="button"  aria-expanded="false" aria-label="Toggle navigation">
+      
+      <div class="container">
+        <div class="row footer__mobile__body mb-4">
+          <div class="col d-flex justify-content-center">
+            <ul class="mobile__list">
+              <li class="mobile__item "><a href="" class="mobile__link">bathrooms</a></li>
+              <li class="mobile__item "><a href="" class="mobile__link">cost calculators</a></li>
+              <li class="mobile__item "><a href="" class="mobile__link">resources</a></li>
+            </ul>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <ul class="mobile__list">
+              <li class="mobile__item "><a href="" class="mobile__link">windows</a></li>
+              <li class="mobile__item "><a href="" class="mobile__link">about us</a></li>
+              <li class="mobile__item "><a href="" class="mobile__link">faqs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class=" w-100 footer__mobile__btn">request a quote</button>
+
+      <div class="container">
+
+        <div class="col footer__mobile__follow">
+          <div class="row">
+            <div class="mobile__follow__head m-0 p-0 mb-4 d-flex align-text-center justify-content-center">Follow Us</div>
+            <div class="col pe-2  pe-lg-3 d-flex justify-content-center mobile__follow__body">
+              <a href="" class="follow__link"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="col pe-2 pe-lg-3 d-flex justify-content-center mobile__follow__body">
+              <a href="" class="follow__link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="col pe-2 pe-lg-3 d-flex justify-content-center mobile__follow__body">
+              <a href="" class="follow__link"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 d-flex justify-content-center footer__mobile__info">
+          <div class="mobile__info__img">
+            <img src="./assets/footer/mobile-footer-info.svg" width="100%" height="100%" title="informations image" alt="informations-image">
+          </div>
+        </div>
+
+        <div class="mt-4 d-flex flex-column col-1 ms-auto align-items-center footer__mobile__arrow">
+          <a href="#top">
+            <img src="./assets/footer/arrow-up.svg" width="25" height="25" title="arrow up image" alt="arrow-up-image"> 
+          </a>
+          <p class="p-0 text-align-center mt-1 mobile__arrow__text">top</p>
+        </div>
+      
+      </div>
+    </div>
+    
+  </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/99787545dd.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script src="./js/pages/bath-categories/bathCategories.js" defer></script>
+  <script src="./js/UI/scrollingInput.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

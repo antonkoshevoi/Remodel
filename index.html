@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.jpg"/>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Remodel</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header__navbar">
+      <nav class="navbar navbar-expand-lg p-0" name="top">
+        
+        <div class="container">
+
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" height="100%" width="100%" title="logo image" alt="logo">
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-end header__menu" id="navbarContent">
+            <ul class="navbar-nav menu__navbar " id="menu-list">
+              <li class="navbar__item"> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5" data-bs-toggle="offcanvas" data-bs-target="#sidebarBathroomContent" aria-controls="sidebarBathroomContent">bathroom remodel</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">window replacement</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">about us</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">meet the experts</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">faqs</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">contact us</a>
+              </li>
+            </ul>
+            <a  
+              class="me-5 me-lg-0 header__search__btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample"
+              href="#collapseWidthExample"
+              id="searchingButton"
+            >
+              <img src="./assets/header/search-btn.svg" width="20" height="20" title="search image" alt="search-image">
+            </a>
+          </div>
+          
+          
+        
+          <div class="col-10 d-flex justify-content-end input__collapse__body">
+            <div class="collapse flex-column  collapse-horizontal" id="collapseWidthExample">
+              <div class="input-group mb-3 collapse__body">
+                <button>
+                  <img src="./assets/header/search-icon.svg" width="21" height="21" class="collapse__icon" title="search image" alt="search-image">
+                </button>
+                <input type="text" class="collapse__input" type="text" placeholder="Search" aria-describedby="button-addon2">
+                <button>
+                  <img 
+                    title="close image"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample"
+                    aria-expanded="false"
+                    aria-controls="collapseWidthExample"
+                    href="#collapseWidthExample"
+                    src="./assets/header/close-icon.svg" 
+                    class="collapse__button" 
+                    type="button" 
+                    id="button-addon2" 
+                    alt="close-image"
+                    width="25"
+                    height="22"
+                  >
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-toggler m-0 p-0 navbar-button header__burger" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false">
+            <div class="d-flex align-items-center burger__body">
+              <a  
+                class="ms-auto me-5 me-lg-0 header__search__btn"
+                aria-expanded="false"
+                id="searchingButtonMobile"
+
+                data-bs-toggle="collapse"
+                data-bs-target="#inputCollapseMobile"
+                aria-expanded="false"
+                aria-controls="inputCollapseMobile"
+                href="#inputScroll"
+                src="./assets/header/close-icon.svg" 
+                type="button" 
+              >
+                <img src="./assets/header/search-btn.svg" width="20" height="20" title="search image" alt="search-image">
+              </a>
+              <p class="m-0 me-2 align-items-center burger__title">menu</p>
+              <button type="button" id="burgerButton" data-bs-toggle="offcanvas" data-bs-target="#burgerMenu" aria-controls="burgerMenu">
+                <img class="burger__icon" width="21" height="20" title="burger image" src="./assets/header/burger.svg" alt="burger-image">
+              </button>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start burger__menu" tabindex="-1" id="burgerMenu" aria-labelledby="burgerMenu">
+            <div class=" offcanvas-header px-2 py-0 burger__menu__head">
+              <div class="container d-flex justify-content-between">
+                <a href="" class="header__logo">
+                  <img src="./assets/logo.svg" width="100%" height="100%" title="logo image" alt="logo-image">
+                </a>
+                <div class="d-flex align-items-center burger__menu__body">
+                  <p class="m-0 me-2 align-items-center burger__menu__title">close</p>
+                  <a type="button" id="closeBurgerButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="./assets/header/close.svg" width="25" height="25" title="close image" alt="close-image">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="container burger__menu__body">
+                <div class="row my-4">
+                  <div class="col d-flex justify-content-center">
+                    <button type="button" class="mx-auto menu__body__btn">Start a Quote</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center">
+                    <div class="menu__body__item ">
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">home</a>
+                      </div>
+                      <div class="menu__body__item">
+                        <div class="dropdown show bathroom__content">
+                          <a class="dropleft menu__body__link dropdown-toggle" href="#" role="button" id="remodelContent" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            bathroom remodel
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="remodelContent">
+                            <a class="dropdown-item " href="#">Master Bathroom</a>
+                            <a class="dropdown-item " href="#">Roll In Shower</a>
+                            <a class="dropdown-item " href="#">Shower to Tub</a>
+                            <a class="dropdown-item " href="#">Small Bathroom</a>
+                            <a class="dropdown-item " href="#">Tub to Shower</a>
+                            <a class="dropdown-item " href="#">Walk In Bath</a>
+                            <a class="dropdown-item " href="#">Walk In Shower</a>
+                            <a class="dropdown-item " href="#">Walk In Tubs</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menu__body__item">
+                        <div class="dropdown show replacement__content">
+                          <a class="menu__body__link dropdown-toggle" href="#" role="button" id="replacementContent" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            window replacement
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="replacementContent">
+                            <a class="dropdown-item " href="#">Awning Windows</a>
+                            <a class="dropdown-item " href="#">Bay Windows</a>
+                            <a class="dropdown-item " href="#">Bow Windows</a>
+                            <a class="dropdown-item " href="#">Casement Windows</a>
+                            <a class="dropdown-item " href="#">Double Hung Windows</a>
+                            <a class="dropdown-item " href="#">House Windows</a>
+                            <a class="dropdown-item " href="#">Picture Windows</a>
+                            <a class="dropdown-item " href="#">Sliding Windows</a>
+                            <a class="dropdown-item " href="#">Speciality Windows</a>
+                            <a class="dropdown-item " href="#">Windows & Doors</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">about us</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">meet the experts</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">faqs</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">contact us</a>
+                      </div>
+                    
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    
+    <main class="main">
+      <!-- connect -->
+      <section class="connect">
+        <div class="container">
+          <div class="connect__body">
+            <h1 class="connect__title title">connect with a pro</h1>
+            <div class="d-flex flex-column connect__content">
+              <h2 class="content__title">
+                <span>Find the best price</span>
+                <br>
+                for your next home project
+              </h2>
+              <div class="d-flex justify-content-center content__buttons">
+                <button class="btn  btn__outline" type="submit">Replacement Windows</button>
+              </div>
+              <div class="d-flex justify-content-center content__buttons">
+                <button class="btn  btn__outline" type="submit">Bath Remodel</button>
+              </div>
+              <div class="d-flex justify-content-center content__buttons">
+                <button class="btn__connect btn__primary" type="submit">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- offer -->
+      <section class="offer">
+        <div class="container">
+          <div class="offer__content">
+            <h2 class="offer__title mb-4">What we offer</h2>
+            <div class="d-flex align-items-center align-items-lg-start flex-column flex-lg-row">
+              <div class="col mb-4 mb-lg-0 p-0 offer__subtitle">
+                <div class="d-flex justify-content-center subtitle__image">
+                  <img src="./assets/footer/circle.svg" width="80" height="80" title="circle image" alt="circle-image">
+                </div>
+                <p class="p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+              <div class="col p-0 mb-4 mb-lg-0 mx-lg-5 offer__subtitle">
+                <div class="d-flex justify-content-center subtitle__image">
+                  <img src="./assets/footer/circle.svg" width="80" height="80" title="circle image" alt="circle-image">
+                </div>
+                <p class="p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+              <div class="col p-0 mb-4 mb-lg-0 mb-lg-3 offer__subtitle">
+                <div class="d-flex justify-content-center subtitle__image">
+                  <img src="./assets/footer/circle.svg" width="80" height="80" title="circle image" alt="circle-image">
+                </div>
+                <p class="p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- works -->
+      <section class="works navbar-expand-lg">
+        <div class="container p-0">
+          <h2 class="text-center mb-5 works__title justify-content-center collapse navbar-collapse">How it works</h2>
+          <div class="d-flex flex-column flex-lg-row flex-row works__body">
+            <div class="col">
+              <div class="d-flex justify-content-center mx-auto works__img">
+                <img src="./assets/main/house-img.svg" width="590" height="473" title="house image" alt="house-image">
+              </div>
+            </div>
+            <h2 class="text-center works__title navbar-toggler p-0" aria-expanded="false">How it works</h2>
+            <div class="d-flex flex-column justify-content-between ms-lg-5 works__list">
+              <div class="col d-flex flex-column flex-lg-row align-items-center works__item">
+                <div class="mb-3 mt-3 mt-lg-0 mb-lg-0 me-lg-3">
+                  <img src="./assets/footer/circle.svg" width="80" height="80" title="circle image" alt="circle-image">
+                </div>  
+                <p class="p-0 works__subtitle text-center text-lg-start ">
+                  <span>Tell us about your home improvement project</span><br>
+                  Answer a few questions about your needs and preferences for your upcoming project.
+                </p>
+              </div>
+              <div class="col d-flex flex-column flex-lg-row align-items-center works__item">
+                <div class="mb-3 mb-lg-0 me-lg-3">
+                  <img src="./assets/footer/circle.svg" width="80" height="80" title="house image" alt="circle-image">
+                </div>  
+                <p class="p-0 works__subtitle text-center text-lg-start ">
+                  <span>We pair you with local professionals</span><br>
+                  We will match you with up to four reliable local professionals by email, phone and text.
+                </p>
+              </div>
+              <div class="col d-flex flex-column flex-lg-row align-items-center works__item">
+                <div class="mb-3 mb-lg-0 me-lg-3">
+                  <img src="./assets/footer/circle.svg" width="80" height="80" title="house image" alt="circle-image">
+                </div>  
+                <p class="p-0 works__subtitle text-center text-lg-start ">
+                  <span>Begin your project</span><br>
+                  Read contractor reviews, compare quotes and book appointments with professionals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- partners -->
+      <section class="partners">
+        <div class="container">
+          <div class="mx-auto partners__content">
+            <img src="./assets/main/partners.svg" width="100%" height="110" title="partners image" alt="partners-image">
+          </div>
+        </div>
+      </section>
+
+      <!-- bathroom sidebar -->
+      <div class="sidebar__bathroom offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebarBathroomContent" aria-labelledby="sidebarBathroomTitle">
+        <div class="offcanvas-header justify-content-end">
+          <div class="d-flex align-items-center">
+            <p class="m-0 me-2 align-items-center sidebar__bathroom__text">close</p>
+            <a type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="./assets/header/close.svg" width="25" height="25" title="close image" alt="close-image">
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body p-0 sidebar__bathroom__body">
+          <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+            <p class="m-0">Master Bathroom</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+            <p class="m-0">Roll In Shower</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+            <p class="m-0">Shower</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+            <p class="m-0">Shower to Tub</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+            <p class="m-0">Small Bathroom</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+            <p class="m-0">Tub to Shower</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+            <p class="m-0">Walk In Bath</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-start mb-3 sidebar__bathroom__item">
+            <p class="m-0">Walk In Shower</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__bathroom__item">
+            <p class="m-0">Walk In Tubs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- collapse mobile input -->
+      <div class="collapse input__collapse__mobile" id="inputCollapseMobile">
+        <div class="input-group">
+          <div class="collapse__mobile__body">
+            <button>
+              <img src="./assets/header/search-icon.svg" width="21" height="21" class="collapse__mobile__icon" title="search image" alt="search-image">
+            </button>
+            <input type="text" class="form-control" placeholder="Search" aria-label="Username">
+            <button>
+              <img 
+                title="close image"
+                data-bs-toggle="collapse"
+                data-bs-target="#inputCollapseMobile"
+                aria-expanded="false"
+                aria-controls="inputCollapseMobile"
+                href="#inputCollapseMobile"
+                src="./assets/header/close-icon.svg" 
+                class="collapse__mobile__button" 
+                type="button" 
+                alt="close-image"
+                width="25"
+                height="22"
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- scrolling input -->
+      <div class="collapse input__scrolling" id="inputScroll">
+        <div class="input-group mb-3 scrolling__body">
+            <input type="text" class="form-control scrolling__input" placeholder="Enter your zip to find local pros." aria-label="Username" aria-describedby="button-scroll-go">
+            <button class="scrolling__button" type="button" id="button-scroll-go">GO</button>
+          </div>
+      </div>
+
+    </main>
+    <!-- footer -->
+    <footer class="footer navbar-expand-lg">
+      <div class="footer__body collapse navbar-collapse" id="footerContent">
+        <div class="container mt-4 align-items-start">
+          <div class="row">
+            <div class="col">
+              <p class="footer__head m-0 mb-3">Bathroom remodel</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__link">Master Bathroom</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Roll In Shower</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Shower</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Shower to Tub</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Small Bathroom</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Tub to Shower</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Walk In Bath</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Walk In Shower</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Walk In Tubs</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="footer__head m-0 mb-3">Windows Replacement</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__link">Awning Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Bay Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Bow Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Casement Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Double Hung Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">House Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Picture Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Sliding Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Speciality Windows</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Windows & Doors</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="footer__head m-0 mb-3">Learn More</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__link">About Us</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Cost Calculators</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Resources</a></li>
+                <li class="footer__item"><a href="" class="footer__link">FAQS</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col footer__follow">
+              <div class="row">
+                <div class="footer__head m-0 p-0 mb-3 d-flex align-text-center justify-content-center">Follow Us</div>
+                <div class="col pe-2  pe-lg-3 d-flex justify-content-center follow__body">
+                  <a href="" class="follow__link"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="col pe-2 pe-lg-3 d-flex justify-content-center follow__body">
+                  <a href="" class="follow__link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="col pe-2 pe-lg-3 d-flex justify-content-center follow__body">
+                  <a href="" class="follow__link"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="w-100"></div>
+  
+            <div class="row align-items-center footer__info">
+              <div class="p-0 footer__logo">
+                <a href="">
+                  <img src="./assets/logo.svg" width="100%" height="100%" title="logo image" alt="logo-image">
+                </a>
+              </div>
+              <div class="col ps-2 ps-md-5 d-flex justify-content-between align-items-center info__body">
+                <div class="info__img">
+                  <img src="./assets/footer/info.svg" width="100%" height="100%" title="informations image" alt="informations-image">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center info__btn">
+                  <a href="#top" class="info__button__arrow">
+                    <img src="./assets/footer/arrow-up.svg" width="100%" height="100%" title="arrow up image" alt="arrow-up-image">
+                  </a>  
+                  <p class="p-0 text-align-center mt-1 btn__text">top</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="navbar-toggler footer__mobile p-0" type="button"  aria-expanded="false" aria-label="Toggle navigation">
+        
+        <div class="container">
+          <div class="row footer__mobile__body mb-4">
+            <div class="col d-flex justify-content-center">
+              <ul class="mobile__list">
+                <li class="mobile__item "><a href="" class="mobile__link">bathrooms</a></li>
+                <li class="mobile__item "><a href="" class="mobile__link">cost calculators</a></li>
+                <li class="mobile__item "><a href="" class="mobile__link">resources</a></li>
+              </ul>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <ul class="mobile__list">
+                <li class="mobile__item "><a href="" class="mobile__link">windows</a></li>
+                <li class="mobile__item "><a href="" class="mobile__link">about us</a></li>
+                <li class="mobile__item "><a href="" class="mobile__link">faqs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <button type="button" class=" w-100 footer__mobile__btn">request a quote</button>
+  
+        <div class="container">
+  
+          <div class="col footer__mobile__follow">
+            <div class="row">
+              <div class="mobile__follow__head m-0 p-0 mb-4 d-flex align-text-center justify-content-center">Follow Us</div>
+              <div class="col pe-2  pe-lg-3 d-flex justify-content-center mobile__follow__body">
+                <a href="" class="follow__link"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <div class="col pe-2 pe-lg-3 d-flex justify-content-center mobile__follow__body">
+                <a href="" class="follow__link"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="col pe-2 pe-lg-3 d-flex justify-content-center mobile__follow__body">
+                <a href="" class="follow__link"><i class="fa-brands fa-square-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mt-5 d-flex justify-content-center footer__mobile__info">
+            <div class="mobile__info__img">
+              <img src="./assets/footer/mobile-footer-info.svg" width="100%" height="100%" title="informations image" alt="informations-image">
+            </div>
+          </div>
+  
+          <div class="mt-4 d-flex flex-column col-1 ms-auto align-items-center footer__mobile__arrow">
+            <a href="#top">
+              <img src="./assets/footer/arrow-up.svg" width="25" height="25" title="arrow up image" alt="arrow-up-image"> 
+            </a>
+            <p class="p-0 text-align-center mt-1 mobile__arrow__text">top</p>
+          </div>
+        
+        </div>
+      </div>
+      
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/99787545dd.js" crossorigin="anonymous"></script>
+  <script src="./js/UI/scrollingInput.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
