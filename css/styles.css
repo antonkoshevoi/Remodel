@@ -1314,6 +1314,13 @@ body{
   }
 }
 /* ---------FORM---------- */
+.step__error{
+  display: none;
+  color: red;
+}
+.active__error{
+  display: block;
+}
 .form{
   margin: 60px 0 210px 0;
 }
@@ -1351,9 +1358,6 @@ body{
   height: 50px;
   color: #555555;
   padding: 0 0 0 20px;
-}
-.step__input.invalid {
-  background-color: #ffdddd;
 }
 .step__item input:focus-visible{
   outline: none;

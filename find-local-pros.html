@@ -222,6 +222,7 @@
               <div class="step__body">
                 <div class="step__item mt-3">
                   <input type="text" placeholder="Zip code" class="form-control step__input" aria-describedby="">
+                  <i class="step__error">Please enter a valid zip code</i>
                 </div>
                 <div class="step__item mt-5 btn__solid">
                   <button class="btn__step btn__primary" onclick="nextPrev(1)" id="btnStart">Start Your Quote</button>
@@ -236,28 +237,29 @@
                 <div class="step__item">
                   <div class="mt-3">
                     <div class="form-check d-flex align-items-center justify-content-center step__check">
-                      <input class="form-check-input" type="radio" name="categori" id="Bathroom">
-                      <label class="form-check-label" for="Bathroom">
+                      <input class="form-check-input" type="radio" name="categori" id="bathroom" value="bathroom">
+                      <label class="form-check-label" for="bathroom">
                         Bathroom remodel
                       </label>
                     </div>
                   </div>
                   <div class="mt-3">
                     <div class="form-check d-flex align-items-center justify-content-center step__check">
-                      <input class="form-check-input" type="radio" name="categori" id="Window" checked>
-                      <label class="form-check-label" for="Window">
+                      <input class="form-check-input" type="radio" name="categori" id="window" value="window">
+                      <label class="form-check-label" for="window">
                         Window Replacement
                       </label>
                     </div>
                   </div>
                   <div class="mt-3">
                     <div class="form-check d-flex align-items-center justify-content-center step__check">
-                      <input class="form-check-input" type="radio" name="categori" id="Other">
-                      <label class="form-check-label" for="Other">
-                        Other Service
+                      <input class="form-check-input" type="radio" name="categori" id="both" value="both">
+                      <label class="form-check-label" for="both">
+                        Both
                       </label>
                     </div>
                   </div>
+                  <i class="step__error">Please select an option (radio button questions)</i>
                 </div>
                 
                 <div class="step__item mt-5 btn__both d-flex justify-content-between">
@@ -272,7 +274,7 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center form__step">
+            <div class="d-flex flex-column justify-content-center align-items-center form__step" id="form-step-options">
               <div class="step__title">
                 <h2 class="">What type of bath issues do you have</h2>
               </div>
@@ -280,7 +282,7 @@
                 <div class="step__item">
                   <div class="mt-3">
                     <div class="form-check d-flex align-items-center justify-content-center step__check">
-                      <input class="form-check-input" type="radio" name="option" id="Option1">
+                      <input class="form-check-input" type="radio" name="option" id="option1">
                       <label class="form-check-label" for="Option1">
                         Option1
                       </label>
@@ -288,7 +290,7 @@
                   </div>
                   <div class="mt-3">
                     <div class="form-check d-flex align-items-center justify-content-center step__check">
-                      <input class="form-check-input" type="radio" name="option" id="Option2">
+                      <input class="form-check-input" type="radio" name="option" id="option2">
                       <label class="form-check-label" for="Option2">
                         Option2
                       </label>
@@ -296,7 +298,7 @@
                   </div>
                   <div class="mt-3">
                     <div class="form-check d-flex align-items-center justify-content-center step__check">
-                      <input class="form-check-input" type="radio" name="option" id="Option3">
+                      <input class="form-check-input" type="radio" name="option" id="option3">
                       <label class="form-check-label" for="Option3">
                         Option3
                       </label>
@@ -330,6 +332,42 @@
                   </div>
                 </div>
     
+                <div class="step__item mt-5 btn__both d-flex justify-content-between">
+                  <div class="btn__prev">
+                    <button class="btn__step btn__outline" onclick="nextPrev(-1)" id="btnPrev"> </button>
+                  </div>
+              
+                  <div class="btn__next">
+                    <button class="btn__step btn__primary btn__image__primary" onclick="nextPrev(1)" id="btnNext">Next</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center form__step">
+              <div class="step__title">
+                <h2 class="">Do you own your own home?</h2>
+              </div>
+              <div class="step__body">
+                <div class="step__item">
+                  <div class="mt-3">
+                    <div class="form-check d-flex align-items-center justify-content-center step__check">
+                      <input class="form-check-input" type="radio" name="answerOne" id="answerOne">
+                      <label class="form-check-label" for="answerOne">
+                        Yes
+                      </label>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <div class="form-check d-flex align-items-center justify-content-center step__check">
+                      <input class="form-check-input" type="radio" name="answerTwo" id="answerTwo">
+                      <label class="form-check-label" for="answerTwo">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                
                 <div class="step__item mt-5 btn__both d-flex justify-content-between">
                   <div class="btn__prev">
                     <button class="btn__step btn__outline" onclick="nextPrev(-1)" id="btnPrev"> </button>
