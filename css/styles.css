@@ -565,7 +565,7 @@ body{
     position: relative;
     padding: 17px 0 0 50px;
   }
-  .btn__outline{
+  .bathroom__button .btn__outline{
     max-width: 210px;
   }
   .bathroom__button{
@@ -1491,14 +1491,14 @@ body{
   .form__body,
   .container,
   .form,
-  .wrapper{
+  .wrapper.find__page{
     height: 100%;
   }
   .form__content{
     height: 89%;
   }
-  .footer,
-  .partners{
+  .find__page .footer,
+  .find__page .partners{
     display: none;
   }
   .step__error{
