@@ -1315,6 +1315,8 @@ body{
 }
 /* ---------FORM---------- */
 .step__error{
+  font-size: 18px;
+  line-height: 22px;
   display: none;
   color: red;
 }
@@ -1326,9 +1328,6 @@ body{
 }
 .form__close__btn{
   background: transparent;
-}
-.step__body{
-  height: 330px;
 }
 .form__step{
   display: none !important;
@@ -1347,6 +1346,9 @@ body{
 .step__item{
   width: 340px;
 }
+.step__item:last-child{
+  padding: 0 0 20px 0;
+}
 .step__item .step__input{
   border: 1px solid #A4CBE6;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -1354,7 +1356,6 @@ body{
   width: 100%;
   font-size: 18px;
   line-height: 22px;
-  text-transform: capitalize;
   height: 50px;
   color: #555555;
   padding: 0 0 0 20px;
@@ -1401,12 +1402,14 @@ body{
   right: 20px;
 }
 .step__check {
+  cursor: pointer;
   background: #FFFFFF;
   border: 1px solid #A4CBE6;
   border-radius: 4px;
   height: 50px;
 }
 .form-check-label{
+  cursor: pointer;
   width: 100%;
   padding: 0 0 0 10px;
   font-size: 18px;
@@ -1415,6 +1418,7 @@ body{
   color: #555555;
 }
 .form-check-input{
+  cursor: pointer;
   width: 40px;
   height: 35px;
   border: 1px solid #A4CBE6;
@@ -1434,13 +1438,13 @@ body{
   background-position: bottom 6px right 5px;
 }
 .step__info{
-  margin: 20px 0 0 0;
   width: 370px;
   font-size: 10px;
   line-height: 14px;
   text-align: center;
   color: #555555;
 }
+
 @media (max-width: 767.98px ) {
   .step__title{
     font-size: 20px;
@@ -1460,6 +1464,7 @@ body{
   }
   .step__item:last-child{
     width: 370px;
+    padding: 0 0 20px 0;
   }
   .form__image{
     width: 95px;
@@ -1473,13 +1478,32 @@ body{
     line-height: 17px;
   }
   .form{
-    margin: 60px 0 40px 0;
+    padding: 25px 0 40px 0;
+    margin: 0;
   }
   .step__body{
-    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .step__body,
+  .form__active,
+  .form__body,
+  .container,
+  .form,
+  .wrapper{
+    height: 100%;
+  }
+  .form__content{
+    height: 89%;
+  }
+  .footer,
+  .partners{
+    display: none;
+  }
+  .step__error{
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 
