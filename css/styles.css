@@ -578,7 +578,7 @@ body{
     font-size: 14px;
     line-height: 17px;
   }
-  .title{
+  .bathroom .title{
     font-size: 24px;
     line-height: 29px;
   }
@@ -1506,11 +1506,117 @@ body{
     line-height: 17px;
   }
 }
-
-
-
-
-
+/* ---------THANK---------- */
+.thank{
+  height: 350px;
+  background: url('../assets/thank-you-page/background.png') no-repeat 100%;
+  background-size: cover;
+}
+.thank__title {
+  color: white;
+  position: relative;
+  top: -175px;
+  z-index: 2;
+}
+.container-fluid{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: url('../assets/thank-you-page/Rectangle.png') no-repeat 100%;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+@media (max-width: 767.98px ) {
+  .thank,
+  .thank__title{
+    display: none;
+  }
+}
+/* ---------MATCHING---------- */
+.matching__body{
+  max-width: 650px;
+}
+.matching__title{
+  margin: 0 0 20px 0;
+}
+.subtitle{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+}
+.text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #555555;
+}
+@media (max-width: 767.98px ) {
+  .matching .subtitle{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .matching .text{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .matching{
+    margin: 50px 0 0 0;
+  }
+}
+/* ---------CHECK---------- */
+.check{
+  margin: 50px 0 75px 0;
+}
+.check__title{
+  margin: 0 0 40px 0;
+}
+.check__body .check__box{
+  flex: 0 1 45%;
+  height: 346px;
+  background: #D9D9D9;
+  border-radius: 6px;
+}
+@media (max-width: 991.98px ) {
+  .check__title{
+    margin: 0 0 20px 0;
+  }
+  .check__body{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .check__body .check__box{
+    flex: none;
+  }
+  .check__box:last-child{
+    margin: 40px 0 0 0;
+  }
+}
+@media (max-width: 767.98px ) {
+  .check .subtitle{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .check__body .check__box{
+    height: 300px;
+  }
+}
+@media (max-width: 574.98px ) {
+  .check__body .check__box{
+    height: 195px;
+  }
+  .check .container{
+    padding: 0 !important;
+  }
+  .check{
+    margin: 25px 0 40px 0;
+  }
+}
 
 
 

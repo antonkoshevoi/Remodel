@@ -217,13 +217,21 @@ function nextPrev(step) {
       if(!document.getElementById('form-step-window')){
         optionsForm.after(bothForm);
       }
-      //optionsForm.after(bothForm);
     }
   }
   currentForm[currentStep].classList.remove('form__active');
   currentStep = currentStep + step;
   showTab(currentStep);
 }
+
+
+document.getElementById('btnSend').onclick = function() {
+  if (!validateForm()){
+    return false;
+  } else{
+    window.location.href = 'thank-you-page.html'
+  }
+} 
 
 function validateForm() {
   let isValid = true;
