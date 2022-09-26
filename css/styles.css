@@ -153,30 +153,31 @@ body{
   background-color: transparent;
   color: #0a58ca;
 }
-/* ---------BATHROOM SIDEBAR---------- */
+/* ---------SIDEBAR---------- */
+.sidebar__window.offcanvas-start,
 .sidebar__bathroom.offcanvas-start {
   top: 68px;
   left: 0;
 }
-.sidebar__bathroom__text{
+.sidebar__text{
   font-size: 10px;
   line-height: 12px;
   color: #000000;
 }
-.modal-backdrop.show{
-  opacity: 0;
-}
-.sidebar__bathroom__item{
+.sidebar__item{
   height: 90px;
   padding: 0 0 0 100px;
 }
-.sidebar__bathroom__item p{
+.sidebar__item p{
   font-size: 16px;
   line-height: 30px;
   color: #555555;
 }
-.sidebar__bathroom__item:hover{
+.sidebar__item:hover{
   background: #EDF5FA;
+}
+.modal-backdrop.show{
+  opacity: 0;
 }
 /* ---------INPUT COLLAPSE---------- */
 .input__collapse__body {
