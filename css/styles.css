@@ -39,6 +39,52 @@ body{
 body{
   font-family: 'Lato', sans-serif;
 } 
+p {
+   font-size:18px;
+   line-height: 26px;
+}
+
+/* -------GENERIC FONT STYLING------- */
+
+h1.generic__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 58px;
+  color:#000;
+}
+h2.generic__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color:#000;
+}
+
+.generic__subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  color: #555555;
+}
+
+/* -------GENERIC PAGE------ */
+.generic__body{
+  padding: 0 100px;
+}
+
+.generic__title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 60px 0;
+}
+.generic__subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  color: #555555;
+}
+
+
 /* ----------------------- */
 .wrapper{
   display: flex;
@@ -1286,7 +1332,7 @@ body{
 }
 /* ---------AREAS---------- */
 .areas{
-  margin: 100px 0 250px 0;
+  margin: 100px 0 100px 0;
 }
 .areas__title{
   font-weight: 700;
