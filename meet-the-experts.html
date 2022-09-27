@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.jpg"/>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Experts</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header__navbar">
+      <nav class="navbar navbar-expand-lg p-0" name="top">
+        
+        <div class="container">
+
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" height="100%" width="100%" title="logo image" alt="logo">
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-end header__menu " id="navbarContent">
+            <ul class="navbar-nav menu__navbar " id="menu-list">
+              <li class="navbar__item"> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5" data-bs-toggle="offcanvas" data-bs-target="#sidebarBathroomContent" aria-controls="sidebarBathroomContent">bathroom remodel</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5" data-bs-toggle="offcanvas" data-bs-target="#sidebarWindowContent" aria-controls="sidebarWindowContent">window replacement</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">about us</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">meet the experts</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">faqs</a>
+              </li>
+              <li class="nav-item "> 
+                <a href="#" class="p-0 nav__link me-2 me-lg-4 me-xl-5">contact us</a>
+              </li>
+            </ul>
+            <a  
+              class="me-5 me-lg-0 header__search__btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample"
+              href="#collapseWidthExample"
+              id="searchingButton"
+            >
+              <img src="./assets/header/search-btn.svg" width="20" height="20" title="search image" alt="search-image">
+            </a>
+          </div>
+          
+          
+        
+          <div class="col-10 d-flex justify-content-end input__collapse__body">
+            <div class="collapse flex-column  collapse-horizontal" id="collapseWidthExample">
+              <div class="input-group mb-3 collapse__body">
+                <button>
+                  <img src="./assets/header/search-icon.svg" width="21" height="21" class="collapse__icon" title="search image" alt="search-image">
+                </button>
+                <input type="text" class="collapse__input" type="text" placeholder="Search" aria-describedby="button-addon2">
+                <button>
+                  <img 
+                    title="close image"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample"
+                    aria-expanded="false"
+                    aria-controls="collapseWidthExample"
+                    href="#collapseWidthExample"
+                    src="./assets/header/close-icon.svg" 
+                    class="collapse__button" 
+                    type="button" 
+                    id="button-addon2" 
+                    alt="close-image"
+                    width="25"
+                    height="22"
+                  >
+                </button>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-toggler m-0 p-0 navbar-button header__burger" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false">
+            <div class="d-flex align-items-center burger__body">
+              <a  
+                class="ms-auto me-5 me-lg-0 header__search__btn"
+                id="searchingButtonMobile"
+                aria-expanded="false"
+                data-bs-toggle="collapse"
+                data-bs-target="#inputCollapseMobile"
+                aria-controls="inputCollapseMobile"
+                href="#inputCollapseMobile"
+                src="./assets/header/close-icon.svg" 
+                type="button" 
+              >
+                <img src="./assets/header/search-btn.svg" width="20" height="20" title="search image" alt="search-image">
+              </a>
+              <p class="m-0 me-2 align-items-center burger__title">menu</p>
+              <button type="button" id="burgerButton" data-bs-toggle="offcanvas" data-bs-target="#burgerMenu" aria-controls="burgerMenu">
+                <img class="burger__icon" width="21" height="20" title="burger image" src="./assets/header/burger.svg" alt="burger-image">
+              </button>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start burger__menu" tabindex="-1" id="burgerMenu" aria-labelledby="burgerMenu">
+            <div class=" offcanvas-header px-2 py-0 burger__menu__head">
+              <div class="container d-flex justify-content-between">
+                <a href="" class="header__logo">
+                  <img src="./assets/logo.svg" width="100%" height="100%" title="logo image" alt="logo-image">
+                </a>
+                <div class="d-flex align-items-center burger__menu__body">
+                  <p class="m-0 me-2 align-items-center burger__menu__title">close</p>
+                  <a type="button" id="closeBurgerButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="./assets/header/close.svg" width="25" height="25" title="close image" alt="close-image">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="container burger__menu__body">
+                <div class="row my-4">
+                  <div class="col d-flex justify-content-center">
+                    <button type="button" class="mx-auto menu__body__btn">Start a Quote</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center">
+                    <div class="menu__body__item ">
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">home</a>
+                      </div>
+                      <div class="menu__body__item">
+                        <div class="dropdown show bathroom__content">
+                          <a class="dropleft menu__body__link dropdown-toggle" href="#" role="button" id="remodelContent" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            bathroom remodel
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="remodelContent">
+                            <a class="dropdown-item " href="#">Master Bathroom</a>
+                            <a class="dropdown-item " href="#">Roll In Shower</a>
+                            <a class="dropdown-item " href="#">Shower to Tub</a>
+                            <a class="dropdown-item " href="#">Small Bathroom</a>
+                            <a class="dropdown-item " href="#">Tub to Shower</a>
+                            <a class="dropdown-item " href="#">Walk In Bath</a>
+                            <a class="dropdown-item " href="#">Walk In Shower</a>
+                            <a class="dropdown-item " href="#">Walk In Tubs</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menu__body__item">
+                        <div class="dropdown show replacement__content">
+                          <a class="menu__body__link dropdown-toggle" href="#" role="button" id="replacementContent" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            window replacement
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="replacementContent">
+                            <a class="dropdown-item " href="#">Awning Windows</a>
+                            <a class="dropdown-item " href="#">Bay Windows</a>
+                            <a class="dropdown-item " href="#">Bow Windows</a>
+                            <a class="dropdown-item " href="#">Casement Windows</a>
+                            <a class="dropdown-item " href="#">Double Hung Windows</a>
+                            <a class="dropdown-item " href="#">House Windows</a>
+                            <a class="dropdown-item " href="#">Picture Windows</a>
+                            <a class="dropdown-item " href="#">Sliding Windows</a>
+                            <a class="dropdown-item " href="#">Speciality Windows</a>
+                            <a class="dropdown-item " href="#">Windows & Doors</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">about us</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">meet the experts</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">faqs</a>
+                      </div>
+                      <div class="menu__body__item ">
+                        <a href="" class="menu__body__link">contact us</a>
+                      </div>
+                    
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    
+    <main class="main">
+      
+      <!-- dedicated -->
+      <section class="dedicated">
+        <div class="container d-flex align-items-center h-100">
+          <h1 class="dedicated__title title">
+            <span>dedicated pros</span><br>
+            with precision expertise!
+          </h1>
+        </div>
+      </section>
+
+      <!-- our experts -->
+      <section class="experts">
+        <div class="container">
+          <div class="row justify-content-center text-md-center">
+            <h2 class="m-0 mt-3 mt-md-5 experts__subtitle subtitle">Our Experts</h2>
+            <div class="col col-lg-6 mt-2 mt-md-4 experts__text text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- experts posts -->
+      <section class="experts__post">
+        <div class="p-0 container navbar-expand-md">
+
+          <div class="row justify-content-between collapse navbar-collapse" id="toggleExpertsPosts">
+            <div class="col p-0 d-flex flex-column align-items-center post__item">
+              <div class="mb-2 post__img">
+                <img src="./assets/experts-page/circle.svg" height="155" width="155" title="circle image" alt="circle-image">
+              </div>
+              <h3 class="mb-3 post__title">John Doe</h3>
+              <div class="post__text">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                </p>
+              </div>
+            </div>
+            <div class="col  d-flex flex-column align-items-center post__item">
+              <div class="mb-2 post__img">
+                <img src="./assets/experts-page/circle.svg" height="155" width="155" title="circle image" alt="circle-image">
+              </div>
+              <h3 class="mb-3 post__title">John Doe</h3>
+              <div class="post__text">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                </p>
+              </div>
+            </div>
+            <div class="col p-0 d-flex flex-column align-items-center post__item">
+              <div class="mb-2 post__img">
+                <img src="./assets/experts-page/circle.svg" height="155" width="155" title="circle image" alt="circle-image">
+              </div>
+              <h3 class="mb-3 post__title">John Doe</h3>
+              <div class="post__text">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- experts post mobile -->
+          <div id="expertsCarousel" class="carousel slide navbar-toggler post__slider" data-toggle="collapse" data-target="#toggleExpertsPosts" data-bs-ride="carousel" aria-controls="navbarContent" aria-expanded="false">
+            <div class="carousel-inner" id="toggleSliderTwo" role="listbox">
+              <div class="carousel-item active">
+                <div class="col p-0 d-flex flex-column align-items-center post__item">
+                  <div class="mb-2 post__img">
+                    <img src="./assets/experts-page/circle.svg" height="155" width="155" title="circle image" alt="circle-image">
+                  </div>
+                  <h3 class="mb-3 post__title">John Doe</h3>
+                  <div class="post__text">
+                    <p class="text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col p-0 d-flex flex-column align-items-center post__item">
+                  <div class="mb-2 post__img">
+                    <img src="./assets/experts-page/circle.svg" height="155" width="155" title="circle image" alt="circle-image">
+                  </div>
+                  <h3 class="mb-3 post__title">John Doe</h3>
+                  <div class="post__text">
+                    <p class="text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col p-0 d-flex flex-column align-items-center post__item">
+                  <div class="mb-2 post__img">
+                    <img src="./assets/experts-page/circle.svg" height="155" width="155" title="circle image" alt="circle-image">
+                  </div>
+                  <h3 class="mb-3 post__title">John Doe</h3>
+                  <div class="post__text">
+                    <p class="text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-next bg-transparent w-aut" href="#expertsCarousel" role="button" data-bs-slide="next">
+              <img src="./assets/experts-page/arrow-next.svg" width="22" height="11" title="arrow next image"  alt="arrow-next-image">
+            </a>
+          </div>
+
+          <div class="mt-4 mx-0 p-0 col-auto navbar-toggler " data-target="#toggleExpertsPosts" aria-expanded="false">
+            <div class="mx-auto about__side__post text-center">
+              <h3 class="side__post__subtitle">looking to renew your home?</h3>
+              <p class="side__post__text text">
+                We’ll help you find the best prices to upgrade and refresh your home.
+              </p>
+              <button class="side__post__btn btn__primary" >Start a Quote</button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- partners -->
+      <section class="partners">
+        <div class="container">
+          <div class="mx-auto partners__content">
+            <img src="./assets/main/partners.svg" width="100%" height="110" title="partners image" alt="partners-image">
+          </div>
+        </div>
+      </section>
+
+      <!-- bathroom sidebar -->
+      <div class="sidebar__bathroom offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebarBathroomContent" aria-labelledby="sidebarBathroomTitle">
+        <div class="offcanvas-header justify-content-end">
+          <div class="d-flex align-items-center">
+            <p class="m-0 me-2 align-items-center sidebar__text">close</p>
+            <a type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="./assets/header/close.svg" width="25" height="25" title="close image" alt="close-image">
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body p-0 sidebar__bathroom__body">
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Master Bathroom</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Roll In Shower</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Shower</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Shower to Tub</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Small Bathroom</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Tub to Shower</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Walk In Bath</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Walk In Shower</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Walk In Tubs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- window sidebar -->
+      <div class="sidebar__window offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebarWindowContent" aria-labelledby="sidebarWindowTitle">
+        <div class="offcanvas-header justify-content-end">
+          <div class="d-flex align-items-center">
+            <p class="m-0 me-2 align-items-center sidebar__text">close</p>
+            <a type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="./assets/header/close.svg" width="25" height="25" title="close image" alt="close-image">
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body p-0 sidebar__window__body">
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Awning Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Bay Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Bow Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Casement Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Double Hung Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">House Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Picture Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Sliding Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Speciality Windows</p>
+          </div>
+          <div class="d-flex align-items-center mb-3 sidebar__item">
+            <p class="m-0">Windows & Doors</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- collapse mobile input -->
+      <div class="collapse collapse-horizontal input__collapse__mobile" id="inputCollapseMobile">
+        <div class="input-group">
+          <div class="collapse__mobile__body">
+            <button>
+              <img src="./assets/header/search-icon.svg" width="21" height="21" class="collapse__mobile__icon" title="search image" alt="search-image">
+            </button>
+            <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="collapse-mobile-button">
+            <button>
+              <img 
+                title="close image"
+                data-bs-toggle="collapse"
+                data-bs-target="#inputCollapseMobile"
+                aria-expanded="false"
+                aria-controls="inputCollapseMobile"
+                href="#inputCollapseMobile"
+                src="./assets/header/close-icon.svg" 
+                class="collapse__mobile__button" 
+                type="button" 
+                alt="close-image"
+                width="25"
+                height="22"
+                id="collapse-mobile-button"
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- scrolling input -->
+      <div class="collapse input__scrolling" id="inputScroll">
+        <div class="input-group mb-3 scrolling__body">
+            <input type="text" class="form-control scrolling__input" placeholder="Enter your zip to find local pros." aria-label="Username" aria-describedby="button-scroll-go">
+            <button class="scrolling__button" type="button" id="button-scroll-go">GO</button>
+          </div>
+      </div>
+
+    </main>
+    <!-- footer -->
+ <footer class="footer navbar-expand-lg">
+   <div class="footer__body collapse navbar-collapse" id="footerContent">
+     <div class="container mt-4 align-items-start">
+       <div class="row">
+         <div class="col">
+           <p class="footer__head m-0 mb-3">Bathroom remodel</p>
+           <ul class="footer__list">
+             <li class="footer__item"><a href="" class="footer__link">Master Bathroom</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Roll In Shower</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Shower</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Shower to Tub</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Small Bathroom</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Tub to Shower</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Walk In Bath</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Walk In Shower</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Walk In Tubs</a></li>
+           </ul>
+         </div>
+         <div class="col">
+           <p class="footer__head m-0 mb-3">Windows Replacement</p>
+           <ul class="footer__list">
+             <li class="footer__item"><a href="" class="footer__link">Awning Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Bay Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Bow Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Casement Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Double Hung Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">House Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Picture Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Sliding Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Speciality Windows</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Windows & Doors</a></li>
+           </ul>
+         </div>
+         <div class="col">
+           <p class="footer__head m-0 mb-3">Learn More</p>
+           <ul class="footer__list">
+             <li class="footer__item"><a href="" class="footer__link">About Us</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Cost Calculators</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Resources</a></li>
+             <li class="footer__item"><a href="" class="footer__link">FAQS</a></li>
+             <li class="footer__item"><a href="" class="footer__link">Contact Us</a></li>
+           </ul>
+         </div>
+         <div class="col footer__follow">
+           <div class="row">
+             <div class="footer__head m-0 p-0 mb-3 d-flex align-text-center justify-content-center">Follow Us</div>
+             <div class="col pe-2  pe-lg-3 d-flex justify-content-center follow__body">
+               <a href="" class="follow__link"><i class="fa-brands fa-facebook"></i></a>
+             </div>
+             <div class="col pe-2 pe-lg-3 d-flex justify-content-center follow__body">
+               <a href="" class="follow__link"><i class="fa-brands fa-instagram"></i></a>
+             </div>
+             <div class="col pe-2 pe-lg-3 d-flex justify-content-center follow__body">
+               <a href="" class="follow__link"><i class="fa-brands fa-square-twitter"></i></a>
+             </div>
+           </div>
+         </div>
+
+         <div class="w-100"></div>
+
+         <div class="row align-items-center footer__info">
+           <div class="p-0 footer__logo">
+             <a href="">
+               <img src="./assets/logo.svg" width="100%" height="100%" title="logo image" alt="logo-image">
+             </a>
+           </div>
+           <div class="col ps-2 ps-md-5 d-flex justify-content-between align-items-center info__body">
+             <div class="info__img">
+               <img src="./assets/footer/info.svg" width="100%" height="100%" title="informations image" alt="informations-image">
+             </div>
+             <div class="d-flex flex-column justify-content-center align-items-center info__btn">
+               <a href="#top" class="info__button__arrow">
+                 <img src="./assets/footer/arrow-up.svg" width="100%" height="100%" title="arrow up image" alt="arrow-up-image">
+               </a>  
+               <p class="p-0 text-align-center mt-1 btn__text">top</p>
+             </div>
+           </div>
+         </div>
+       </div>
+
+     </div>
+
+   </div>
+
+   <div class="navbar-toggler footer__mobile p-0" type="button"  aria-expanded="false" aria-label="Toggle navigation">
+     
+     <div class="container">
+       <div class="row footer__mobile__body mb-4">
+         <div class="col d-flex justify-content-center">
+           <ul class="mobile__list">
+             <li class="mobile__item "><a href="" class="mobile__link">bathrooms</a></li>
+             <li class="mobile__item "><a href="" class="mobile__link">cost calculators</a></li>
+             <li class="mobile__item "><a href="" class="mobile__link">resources</a></li>
+           </ul>
+         </div>
+         <div class="col d-flex justify-content-center">
+           <ul class="mobile__list">
+             <li class="mobile__item "><a href="" class="mobile__link">windows</a></li>
+             <li class="mobile__item "><a href="" class="mobile__link">about us</a></li>
+             <li class="mobile__item "><a href="" class="mobile__link">faqs</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+
+     <button type="button" class=" w-100 footer__mobile__btn">request a quote</button>
+
+     <div class="container">
+
+       <div class="col footer__mobile__follow">
+         <div class="row">
+           <div class="mobile__follow__head m-0 p-0 mb-4 d-flex align-text-center justify-content-center">Follow Us</div>
+           <div class="col pe-2  pe-lg-3 d-flex justify-content-center mobile__follow__body">
+             <a href="" class="follow__link"><i class="fa-brands fa-facebook"></i></a>
+           </div>
+           <div class="col pe-2 pe-lg-3 d-flex justify-content-center mobile__follow__body">
+             <a href="" class="follow__link"><i class="fa-brands fa-instagram"></i></a>
+           </div>
+           <div class="col pe-2 pe-lg-3 d-flex justify-content-center mobile__follow__body">
+             <a href="" class="follow__link"><i class="fa-brands fa-square-twitter"></i></a>
+           </div>
+         </div>
+       </div>
+
+       <div class="mt-5 d-flex justify-content-center footer__mobile__info">
+         <div class="mobile__info__img">
+           <img src="./assets/footer/mobile-footer-info.svg" width="100%" height="100%" title="informations image" alt="informations-image">
+         </div>
+       </div>
+
+       <div class="mt-4 d-flex flex-column col-1 ms-auto align-items-center footer__mobile__arrow">
+         <a href="#top">
+           <img src="./assets/footer/arrow-up.svg" width="25" height="25" title="arrow up image" alt="arrow-up-image"> 
+         </a>
+         <p class="p-0 text-align-center mt-1 mobile__arrow__text">top</p>
+       </div>
+     
+     </div>
+   </div>
+   
+ </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/99787545dd.js" crossorigin="anonymous"></script>
+<script src="./js/UI/scrollingInput.js" defer></script>
+<script src="./js/main.js" defer></script>
+</body>
+</html>
