@@ -1864,14 +1864,125 @@ body{
 .post__slider .carousel-control-next{
   top: -50%;
 }
-
-
-
-
-
-
-
-
+/* ---------GET IN TOUCH---------- */
+.get{
+  height: 450px;
+  background: url('../assets/experts-page/banner-experts.png') no-repeat 100%;
+  background-size: cover;
+}
+.get__title{
+  margin: 0 0 0 50px;
+  color: white;
+}
+@media (max-width: 767.98px ) {
+  .get{
+    height: 200px;
+    background-position: top;
+  }
+  .get .title{
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 574.98px ) {
+  .get__title{
+    margin: 0 0 0 10px;
+    color: white;
+  }
+}
+/* ---------CONTACT US---------- */
+.contact{
+  margin: 60px 0 70px 0;
+}
+.contact__form{
+  width: 600px;
+  padding: 0 20px;
+  margin: 0 0 30px 0;
+}
+.contact__form .contact__input{
+  border: none;
+  font-size: 18px;
+  padding: 16px 0 10px 10px;
+  width: 100%;
+  line-height: 22px;
+  color: #555555;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.contact__form .contact__area{
+  border: none;
+  font-size: 18px;
+  padding: 16px 0 0 10px;
+  width: 100%;
+  line-height: 22px;
+  color: #555555;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.contact__form .contact__input:focus{
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+}
+.contact__form .input-container label{
+  padding: 0 0 0 10px;
+}
+.contact__form .input-container.active .contact__area,
+.contact__form .input-container.active .contact__input {
+  background: #EDF5FA;
+}
+.contact__form .input-container.active label {
+  transform: translate(0, 4px) scale(.75);
+  color: #0E76BC;
+}
+.contact__form:nth-child(4) .input-container{
+  height: auto;
+}
+.contact__area{
+  resize: none;
+}
+.contact__btn{
+  width: 100%;
+}
+@media (max-width: 767.98px ) {
+  .contact__body .subtitle{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .contact__body .input-container .contact__area,
+  .contact__body .input-container label{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .contact__body .input-container .contact__input{
+    font-size: 16px;
+    line-height: 19px;
+    padding: 19px 0 10px 10px;
+  }
+  .contact__body .text{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contact__title,
+  .contact__form{
+    width: 350px;
+    padding: 0;
+    margin: 0 auto 30px auto;
+  }
+  .contact__form:last-child{
+    width: 370px;
+  }
+  .contact__body{
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 370px;
+    margin: 0 auto;
+  }
+  .contact {
+    margin: 30px 0 70px 0;
+  }
+  .contact{
+    transform: translateY(-30px);
+    margin: 0;
+  }
+}
 
 
 
