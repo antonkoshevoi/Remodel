@@ -18,7 +18,6 @@ const FloatLabel = (() => {
   
   // register events
   const bindEvents = (element) => {
-    console.log(element)
     const floatField = element.querySelector('input');
     floatField.addEventListener('focus', handleFocus);
     floatField.addEventListener('blur', handleBlur);    
