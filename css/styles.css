@@ -129,9 +129,11 @@ h2.generic__title {
   display: block;
   width: 30px;
 }
-.nav__link.active,
+.nav__link.active {
+  color: #000;
+}
 .nav__link:hover{
-  color: #0a58ca;
+  color: #0E76BC;
 }
 /* ---------BURGER---------- */
 .header__burger{
@@ -428,7 +430,8 @@ h2.generic__title {
     padding: 25px 0 0 0;
   }
   .connect__content{
-    margin: 90px 0 0 0;
+    /*margin: 90px 0 0 0;*/
+	margin:100px auto 0 auto;
   }
   .connect__title{
     font-size: 28px;
@@ -767,10 +770,16 @@ h2.generic__title {
   transform: translateX(0);
 }
 /* ---------GALLARY---------- */
+.breadcrumb {
+	margin:0 0 60px 0;
+}
+
 .gallary__breadcrumb .breadcrumb-item .breadcrumb__link{
   font-size: 16px;
   line-height: 20px;
   color: #555555;
+	margin-bottom:40px;
+	
 }
 .gallary__breadcrumb .breadcrumb-item .breadcrumb__link:hover{
   color: #0E76BC;
