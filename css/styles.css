@@ -2014,6 +2014,12 @@ body{
 .footer__logo{
   width: auto;
 }
+.info__content__link,
+.info__content{
+  font-size: 12px;
+  line-height: 14px;
+  color: #555555;
+}
 .follow__link{
   color: #555555;
 }
