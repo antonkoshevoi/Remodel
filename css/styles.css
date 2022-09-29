@@ -2040,6 +2040,12 @@ body{
   text-align: center;
   color: #000000;
 }
+@media (max-width: 991.98px ) {
+  .info__content__link{
+    font-size: 9px;
+    line-height: 14px;
+  }
+}
 /* ---------FOOTER-MOBILE---------- */
 .footer__mobile{
   background: #EDF5FA;
@@ -2077,6 +2083,18 @@ body{
   text-transform: lowercase;
   color: #555555;
 }
+.mobile__info__title{
+  font-size: 9px;
+  line-height: 14px;
+  color: #555555;
+}
+
+.mobile__info__content p:nth-child(2) .info__content__link:first-child,
+.mobile__info__content p:last-child :not(.info__content__link:last-child) {
+  border-right: 1px solid #555555;
+  padding-right: 4px ;
+} 
+
 .mobile__arrow__text{
   font-size: 12px;
   line-height: 14px;
