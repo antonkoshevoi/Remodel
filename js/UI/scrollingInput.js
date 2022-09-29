@@ -1,14 +1,26 @@
 
 //function to track an item on the screen
 let isVisible;
-const el = document.getElementById('searchingButtonMobile');
-const observer = new IntersectionObserver((entries) => {
-    if(entries[0].isIntersecting){
-      isVisible = true;
-    } else {
-      isVisible = false;
-    }
+// const el = document.getElementById('searchingButtonMobile');
+// const observer = new IntersectionObserver((entries) => {
+//     if(entries[0].isIntersecting){
+//       isVisible = true;
+//     } else {
+//       isVisible = false;
+//     }
+// });
+
+
+// Выполняем заново при изменении размера окна
+window.addEventListener('resize', function() {
+  if(window.innerWidth <= 991){
+    isVisible = true;
+  } else{
+    isVisible = false;
+  }
 });
+
+
 
 //function that starts an intu at scrolling 
 var lastScrollTop = 0;
@@ -24,4 +36,4 @@ window.addEventListener("scroll",  function(){
   lastScrollTop = st <= 0 ? 0 : st; 
 }, false);
 
-observer.observe(el);
+// observer.observe(el);
