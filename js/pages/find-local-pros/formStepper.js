@@ -229,7 +229,7 @@ document.getElementById('btnSend').onclick = function() {
   if (!validateForm()){
     return false;
   } else{
-    window.location.href = 'thank-you-page.html'
+    window.location.href = 'thank-you.html'
   }
 } 
 
