@@ -1791,6 +1791,10 @@ body{
   .about__title{
     margin: 0 0 10px 0;
   }
+  .about .text{
+    font-size: 14px;
+    line-height: 20px;
+  }
   .post__subtitle{
     font-size: 18px;
     line-height: 14px;
