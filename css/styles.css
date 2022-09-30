@@ -39,6 +39,42 @@ body{
 body{
   font-family: 'Lato', sans-serif;
 } 
+
+/* -------GENERIC FONT STYLING------- */
+h1.generic__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 58px;
+  color:#000;
+}
+h2.generic__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color:#000;
+}
+.generic__subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  color: #555555;
+}
+/* -------GENERIC PAGE------ */
+.generic__body{
+  padding: 0 100px;
+}
+.generic__title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 60px 0;
+}
+.generic__subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  color: #555555;
+}
 /* ----------------------- */
 .wrapper{
   display: flex;
@@ -84,9 +120,11 @@ body{
   width: 30px;
   -webkit-appearance: none;
 }
-.nav__link.active,
+.nav__link.active{
+  color: #000;
+}
 .nav__link:hover{
-  color: #0a58ca;
+  color: #0E76BC;
 }
 /* ---------BURGER---------- */
 .header__burger{
@@ -301,7 +339,7 @@ body{
   top: 29px;
   left: 10px;
 }
-@media (max-width: 998.98px) {
+@media (max-width: 991.98px) {
   .input__collapse__mobile{
     display: block;
   }
@@ -399,7 +437,7 @@ body{
     width: 310px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 574.98px) {
   .content__buttons .btn__primary{
     font-size: 16px;
     line-height: 19px;
@@ -450,6 +488,12 @@ body{
   }
   .offer__subtitle p{
     font-size: 14px;
+    line-height: 20px;
+  }
+  .offer .generic__subtitle{
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 /* ---------WORKS---------- */
@@ -730,6 +774,9 @@ body{
   transform: translateX(0);
 }
 /* ---------GALLARY---------- */
+.breadcrumb {
+	margin:0 0 60px 0;
+}
 .gallary__breadcrumb .breadcrumb-item .breadcrumb__link{
   font-size: 16px;
   line-height: 20px;
@@ -1177,8 +1224,8 @@ body{
 }
 .estimate__title{
   font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 40px;
+  line-height: 28px;
   text-align: center;
   color: #FFFFFF;
   margin: 0 0 30px 0;
@@ -1192,6 +1239,13 @@ body{
 }
 .estimate__body{
   padding: 135px 0;
+}
+@media (max-width: 767.98px ) {
+  .estimate__title{
+    font-size: 28px;
+    line-height: 38px;
+    width: 250px;
+  }
 }
 @media (max-width: 575.98px) {
   .estimate__btn button::after {
@@ -1295,7 +1349,7 @@ body{
 }
 /* ---------AREAS---------- */
 .areas{
-  margin: 100px 0 250px 0;
+  margin: 100px 0 100px 0;
 }
 .areas__title{
   font-weight: 700;
