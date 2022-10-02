@@ -27,15 +27,4 @@ itemsSeconSlider.forEach((el) => {
   }
 })
 
-//function to create and add button under the gallery image
-const addGallaryButton = () => {
-  let buttonLink = document.createElement('button');
-  buttonLink.className = 'gallary__button btn__outline';
-  buttonLink.innerHTML = 'View Bathtub Conversons';
-  document.querySelector('#baguetteBox-overlay').append(buttonLink);
-}
-
-//function to start gallary on click image
 baguetteBox.run('.tz-gallery');
-addGallaryButton();
-
