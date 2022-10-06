@@ -34,29 +34,26 @@ form.onsubmit = function () {
       .querySelector('.step__error')
       .classList.remove('active__error');
     }
-  })
+  });
 
-  if(emptyInputs.length === ''){
+  if(emptyInputs.length){
     return false;
   }
 
   if(!validateEmail(emailValue)){
     document.querySelector('.error__email').classList.add('active__error');
-    return false;
   } else{
     document.querySelector('.error__email').classList.remove('active__error');
   }
 
   if(!validatePhone(phoneValue)){
     document.querySelector('.error__phone').classList.add('active__error');
-    return false;
   } else{
     document.querySelector('.error__phone').classList.remove('active__error');
   }
   
   if(areaValue === '' ){
     document.querySelector('.error__area').classList.add('active__error');
-    return false;
   } else{
     document.querySelector('.error__area').classList.remove('active__error');
   }

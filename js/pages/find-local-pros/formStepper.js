@@ -28,30 +28,16 @@ function nextPrev(step) {
         </div>
         <div class="step__body">
           <div class="step__item">
-            <div class="mt-3">
-              <div class="form-check d-flex align-items-center justify-content-center step__check">
-                <input class="form-check-input" type="radio" name="option" id="option1" value="option1">
-                <label class="form-check-label" for="option1">
-                  Option1
-                </label>
-              </div>
-            </div>
-            <div class="mt-3">
-              <div class="form-check d-flex align-items-center justify-content-center step__check">
-                <input class="form-check-input" type="radio" name="option" id="option2" value="option2">
-                <label class="form-check-label" for="option2">
-                  Option2
-                </label>
-              </div>
-            </div>
-            <div class="mt-3">
-              <div class="form-check d-flex align-items-center justify-content-center step__check">
-                <input class="form-check-input" type="radio" name="option" id="option3" value="option3">
-                <label class="form-check-label" for="option3">
-                  Option3
-                </label>
-              </div>
-            </div>
+          <div class="mt-3">
+            <select id="select-option" onchange="selectFunction()" class="form-select d-flex align-items-center justify-content-center step__check">
+              <option value="" selected>Options</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+            
             <i class="step__error">Please select an option (radio button questions)</i>
           </div>
 
@@ -176,30 +162,15 @@ function nextPrev(step) {
         </div>
         <div class="step__body">
           <div class="step__item">
-            <div class="mt-3">
-              <div class="form-check d-flex align-items-center justify-content-center step__check">
-                <input class="form-check-input" type="radio" name="option" id="option1">
-                <label class="form-check-label" for="option1">
-                  Option1
-                </label>
-              </div>
-            </div>
-            <div class="mt-3">
-              <div class="form-check d-flex align-items-center justify-content-center step__check">
-                <input class="form-check-input" type="radio" name="option" id="option2">
-                <label class="form-check-label" for="option2">
-                  Option2
-                </label>
-              </div>
-            </div>
-            <div class="mt-3">
-              <div class="form-check d-flex align-items-center justify-content-center step__check">
-                <input class="form-check-input" type="radio" name="option" id="option3">
-                <label class="form-check-label" for="option3">
-                  Option3
-                </label>
-              </div>
-            </div>
+          <div class="mt-3">
+            <select id="select-option" onchange="selectFunction()" class="form-select d-flex align-items-center justify-content-center step__check">
+              <option value="" selected>Options</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+            
             <i class="step__error">Please select an option (radio button questions)</i>
           </div>
           <div class="step__item mt-5 btn__both d-flex justify-content-between">
@@ -237,6 +208,7 @@ function validateForm() {
   let isValid = true;
   let currentForm = document.querySelectorAll(".form__step")[currentStep];
   let inputLength = currentForm.querySelectorAll("input").length;
+  let selectOption = currentForm.querySelector('#select-option');
   for (i = 0; i < inputLength; ++i) {
     let inputs = currentForm.querySelectorAll('input')[i];
     if(inputs.getAttribute("type") === 'text'){
@@ -298,7 +270,20 @@ function validateForm() {
 
     }
   }
+  if(selectOption){
+    if(!selectOption.value.length){
+      currentForm.querySelector('.step__error').classList.add('active__error');
+      isValid = false;
+    } else{
+      currentForm.querySelector('.step__error').classList.remove('active__error');
+    }
+  }
   return isValid; 
+}
+
+
+selectFunction = function() {
+
 }
 
 
